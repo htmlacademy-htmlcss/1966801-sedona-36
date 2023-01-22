@@ -110,12 +110,31 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <legend class="catalog-filter-title">Стоимость, ₽:
+              <input class="control-input" type="range" name="price" min="0" max="9000" step="1">
+            </legend>
           </fieldset>
 
           <button class="button" type="submit">Применить</button>
           <button class="button" type="submit">Сбросить</button>
         </form>
+
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
+
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a  class="button" href="#">
+          <span class="visually-hidden">Показать одну карточку</span>
+        </a>
+        <a  class="button" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+
       </section>
     </main>
 

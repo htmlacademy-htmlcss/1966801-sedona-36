@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
     <header class="page-header">
       <img class="logo" src="" alt="Логотип Седона" />
@@ -48,32 +49,32 @@
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-item-title">Настоящий городок</h3>
-            <p class="advantages-description">
+            <p class="advantages-item-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
             <img class="advantages-img" src="" alt="Улица Седоны" />
           </li>
           <li class="advantages-item">
             <h3 class="advantages-item-title">Небольшая площадь</h3>
-            <p class="advantages-description">
+            <p class="advantages-item-description">
               Все достопримечательности находятся очень близко
             </p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-item-title">Красивая дорога</h3>
-            <p class="advantages-description">
+            <p class="advantages-item-description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-item-title">Мало туристов</h3>
-            <p class="advantages-description">
+            <p class="advantages-item-description">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-item-title">Там есть мост дьявола</h3>
-            <p class="advantages-description">
+            <p class="advantages-item-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
             <img class="advantages-img" src="" alt="Мост дьявола" />
@@ -89,21 +90,21 @@
           <li class="services-item">
             <img class="services-img" src="" alt="Иконка дома" />
             <h3 class="services-item-title">Жильё</h3>
-            <p class="services-description">
+            <p class="services-item-description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
           <li class="services-item">
             <img class="services-img" src="" alt="Иконка бургера" />
             <h3 class="services-item-title">Еда</h3>
-            <p class="services-description">
+            <p class="services-item-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="services-item">
             <img class="services-img" src="" alt="Иконка подарка" />
             <h3 class="services-item-title">Сувениры</h3>
-            <p class="services-description">
+            <p class="services-item-description">
               Не только китайского, но и настоящего местного производства!
             </p>
           </li>
@@ -127,11 +128,14 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
+          <label for="newsletter-email">Email</label>
           <input
             class="field"
             placeholder="Ваш e-mail"
             type="email"
             name="newsletter-email"
+            id="newsletter-email"
+            required
           />
           <button class="button newsletter-button" type="submit">
             Отправить

@@ -1,8 +1,8 @@
 {
   "editor.renderWhitespace": "selection",
   "files.exclude": {
-      "*:Zone.Identifier": true,
-      "node_modules/": true
+    "*:Zone.Identifier": true,
+    "node_modules/": true
   },
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairs": "active",
@@ -19,5 +19,8 @@
   "css.lint.unknownVendorSpecificProperties": "warning",
   "css.lint.zeroUnits": "error",
   "html.format.endWithNewline": true,
-  "html.format.indentInnerHtml": true
+  "html.format.indentInnerHtml": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }

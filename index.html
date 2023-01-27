@@ -7,8 +7,8 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <img class="logo" src="" alt="Логотип Седона">
+    <header class="page-header" data-test="header">
+      <img class="page-header-logo" src="images/brand-sedona.svg" width="140" height="70" alt="Логотип Седона">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -39,10 +39,16 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index" data-test="main">
       <h1 class="visually-hidden">Городок Седона</h1>
-      <img src="" alt="Природа Седоны">
-      <section class="advantages">
+      <section class="hero" data-test="hero">
+        <h2 class="visually-hidden">Седона</h2>
+        <img src="images/background-hero.jpg" width="1200" height="485" alt="Горы Седоны">
+        <img src="images/welcome.svg" width="458" height="352"
+          alt="Welcome to the gargeous Sedona, because the Grand Canyon sucks!">
+      </section>
+
+      <section class="advantages" data-test="advantages">
         <h2 class="advantages-title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h2>
@@ -53,7 +59,7 @@
             <p class="advantages-item-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
-            <img class="advantages-img" src="" alt="Улица Седоны">
+            <img class="advantages-img" src="images/advantages-photo-1.jpg" width="800" height="384" alt="Улица Седоны">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-item-title">Небольшая площадь</h3>
@@ -78,7 +84,7 @@
             <p class="advantages-item-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
-            <img class="advantages-img" src="" alt="Мост дьявола">
+            <img class="advantages-img" src="images/advantages-photo-2.jpg" width="800" height="385" alt="Мост дьявола">
           </li>
         </ul>
       </section>
@@ -89,21 +95,21 @@
         <p>Опытный персонал и качественное обслуживание!</p>
         <ul class="services-list">
           <li class="services-item">
-            <img class="services-img" src="" alt="Иконка дома">
+            <img class="services-img" src="images/house.svg" width="75" height="72" alt="Иконка дома">
             <h3 class="services-item-title">Жильё</h3>
             <p class="services-item-description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
           <li class="services-item">
-            <img class="services-img" src="" alt="Иконка бургера">
+            <img class="services-img" src="images/burger.svg" width="74" height="70" alt="Иконка бургера">
             <h3 class="services-item-title">Еда</h3>
             <p class="services-item-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="services-item">
-            <img class="services-img" src="" alt="Иконка подарка">
+            <img class="services-img" src="images/gift.svg" width="64" height="76" alt="Иконка подарка">
             <h3 class="services-item-title">Сувениры</h3>
             <p class="services-item-description">
               Не только китайского, но и настоящего местного производства!
@@ -111,7 +117,7 @@
           </li>
         </ul>
       </section>
-      <section class="hotel-search">
+      <section class="hotel-search" data-test="search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
         <p>
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
@@ -119,7 +125,7 @@
         </p>
         <button class="button">Поиск гостиницы в Седоне</button>
       </section>
-      <section class="newsletter">
+      <section class="newsletter" data-test="subscribe">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -135,7 +141,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
@@ -166,7 +172,8 @@
       </section>
       <div>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          .html academy
+          <img class="footer-logo" src="images/brand-htmlacademy.svg" width="115" height="33"
+            alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>

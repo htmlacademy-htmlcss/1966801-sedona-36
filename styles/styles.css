@@ -47,10 +47,29 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .description {
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
+}
+
+.hero {
+  background-image: url("../images/triangle.svg");
+  background-repeat: no-repeat;
+  background-size: 1200px 57px;
+}
+
+.advantages-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-item-description {
   text-align: center;
 }

@@ -41,3 +41,16 @@ body {
   text-align: center;
   text-decoration: none;
 }
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}

@@ -31,6 +31,11 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  border: none;
+}
+
+.button-blue {
+  background-color: #82B3D3;
 }
 
 .navigation-link {
@@ -42,7 +47,7 @@ body {
   text-decoration: none;
 }
 
-.title {
+.main-index-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -50,16 +55,29 @@ body {
   text-transform: uppercase;
 }
 
-.description {
+.main-index-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  color: #333333;
 }
 
 .hero {
-  background-image: url("../images/triangle.svg");
+  background-image: url("../images/background-hero.jpg");
   background-repeat: no-repeat;
-  background-size: 1200px 57px;
+  background-size: 100% auto;
+}
+
+.advantages-item {
+  background-color: #82B3D3;
+}
+
+.advantages-item:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-title {
@@ -70,6 +88,44 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-item:first-child .advantages-item-title,
+.advantages-item:last-child .advantages-item-title,
+.advantages-item:first-child .advantages-item-description,
+.advantages-item:last-child .advantages-item-description {
+  color: #FFFFFF;
+}
+
 .advantages-item-description {
   text-align: center;
+  color: #333333;
+}
+
+.advices {
+  text-align: center;
+}
+
+.advices-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.hotel-search .button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscribe {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  background-image: url("../images/background-subscribe.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscribe .main-index-description {
+  color: #FFFFFF;
+}
+
+.subscribe .button {
+  font-size: 20px;
+  line-height: 36px;
 }

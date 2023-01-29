@@ -141,3 +141,71 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+.decoration-container {
+  background-image: url("../images/background-filter.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-title {
+  font-size: 16px;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.catalog-filter-title {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-transparent {
+  background-color: transparent;
+}
+
+.catalog-filter-search {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.select-control {
+  color: #333333;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 24px;
+  Line-height: 28px;
+  font-weight: 700;
+}
+
+.hotel-card-type,
+.hotel-card-price {
+  color: #333333;
+}
+
+.hotel-card-raiting span {
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  text-transform: uppercase;
+}

@@ -38,6 +38,14 @@ body {
   background-color: #82B3D3;
 }
 
+.button-transparent {
+  background-color: transparent;
+}
+
+.button-green {
+  background-color: #7DB54F;
+}
+
 .navigation-link {
   color: #000000;
   font-size: 20px;
@@ -125,7 +133,8 @@ body {
   color: #FFFFFF;
 }
 
-.subscribe .button {
+.subscribe .button,
+.inner-subscribe .button {
   font-size: 20px;
   line-height: 36px;
 }
@@ -175,10 +184,6 @@ body {
   line-height: 23px;
 }
 
-.button-transparent {
-  background-color: transparent;
-}
-
 .catalog-filter-search {
   font-size: 30px;
   line-height: 36px;
@@ -208,4 +213,19 @@ body {
   line-height: 20px;
   color: #333333;
   text-transform: uppercase;
+}
+
+.pagination-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.inner-subscribe {
+  color: #000000;
 }

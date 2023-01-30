@@ -215,15 +215,22 @@ body {
   text-transform: uppercase;
 }
 
+.pagination-item {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
 .pagination-link {
   color: #FFFFFF;
+  text-align: center;
   text-decoration: none;
   background-color: #82B3D3;
 }
 
 .pagination-current {
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 
 .inner-subscribe {

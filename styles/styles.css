@@ -55,7 +55,7 @@ body {
   text-decoration: none;
 }
 
-.main-index-title {
+.index-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -63,7 +63,7 @@ body {
   text-transform: uppercase;
 }
 
-.main-index-description {
+.index-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;

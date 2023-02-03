@@ -4,32 +4,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header" data-test="header">
-      <img class="page-header-logo" src="images/brand-sedona.svg" width="140" height="70" alt="Логотип Седона">
+      <img class="page-header-logo" src="images/brand-Sedona.png" width="140" height="70" alt="Логотип Седона.">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="naviation-link" href="#">Главная</a>
+            <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="naviation-link" href="#">О седоне </a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="naviation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="naviation-link" href="#">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="naviation-link" href="#">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="favourites">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -40,26 +42,26 @@
     </header>
 
     <main class="main-index" data-test="main">
-      <h1 class="visually-hidden">Городок Седона</h1>
-      <section class="hero" data-test="hero">
-        <h2 class="visually-hidden">Седона</h2>
-        <img src="images/background-hero.jpg" width="1200" height="485" alt="Горы Седоны">
+      <header class="hero" data-test="hero">
+        <h1 class="visually-hidden">Городок Седона</h1>
         <img src="images/welcome.svg" width="458" height="352"
           alt="Welcome to the gargeous Sedona, because the Grand Canyon sucks!">
-      </section>
+      </header>
 
       <section class="advantages" data-test="advantages">
-        <h2 class="advantages-title">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <p class="index-title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </h2>
-        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </p>
+        <p class="index-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-item-title">Настоящий городок</h3>
             <p class="advantages-item-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
-            <img class="advantages-img" src="images/advantages-photo-1.jpg" width="800" height="384" alt="Улица Седоны">
+            <img class="advantages-img" src="images/advantages-photo-1.jpg" width="800" height="384"
+              alt="Улица Седоны.">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-item-title">Небольшая площадь</h3>
@@ -84,57 +86,60 @@
             <p class="advantages-item-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
-            <img class="advantages-img" src="images/advantages-photo-2.jpg" width="800" height="385" alt="Мост дьявола">
+            <img class="advantages-img" src="images/advantages-photo-2.jpg" width="800" height="385"
+              alt="Мост дьявола.">
           </li>
         </ul>
       </section>
-      <section class="services">
-        <h2 class="services-title">
+      <section class="advices">
+        <h2 class="visually-hidden">Советы для приезжающих</h2>
+        <p class="index-title">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
-        </h2>
-        <p>Опытный персонал и качественное обслуживание!</p>
-        <ul class="services-list">
-          <li class="services-item">
-            <img class="services-img" src="images/house.svg" width="75" height="72" alt="Иконка дома">
-            <h3 class="services-item-title">Жильё</h3>
-            <p class="services-item-description">
+        </p>
+        <p class="index-description">Опытный персонал и качественное обслуживание!</p>
+        <ul class="advices-list">
+          <li class="advices-item">
+            <img class="advices-img" src="images/house.svg" width="75" height="72" alt="Иконка дома">
+            <h3 class="advices-item-title">Жильё</h3>
+            <p class="advices-item-description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
-          <li class="services-item">
-            <img class="services-img" src="images/burger.svg" width="74" height="70" alt="Иконка бургера">
-            <h3 class="services-item-title">Еда</h3>
-            <p class="services-item-description">
+          <li class="advices-item">
+            <img class="advices-img" src="images/burger.svg" width="74" height="70" alt="Иконка бургера">
+            <h3 class="advices-item-title">Еда</h3>
+            <p class="advices-item-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li class="services-item">
-            <img class="services-img" src="images/gift.svg" width="64" height="76" alt="Иконка подарка">
-            <h3 class="services-item-title">Сувениры</h3>
-            <p class="services-item-description">
+          <li class="advices-item">
+            <img class="advices-img" src="images/gift.svg" width="64" height="76" alt="Иконка подарка">
+            <h3 class="advices-item-title">Сувениры</h3>
+            <p class="advices-item-description">
               Не только китайского, но и настоящего местного производства!
             </p>
           </li>
         </ul>
       </section>
       <section class="hotel-search" data-test="search">
-        <h2 class="hotel-search-title">Заинтересовались?</h2>
-        <p>
+        <h2 class="visually-hidden">Поиск отеля</h2>
+        <p class="index-title">Заинтересовались?</p>
+        <p class="index-description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
         <button class="button">Поиск гостиницы в Седоне</button>
       </section>
-      <section class="newsletter" data-test="subscribe">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">
+      <section class="subscribe" data-test="subscribe">
+        <h2 class="index-title">Подпишитесь на рассылку</h2>
+        <p class="index-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="subscribe-email">Email</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
             required>
-          <button class="button newsletter-button" type="submit">
+          <button class="button button-blue" type="submit">
             Отправить
           </button>
         </form>
@@ -172,7 +177,7 @@
       </section>
       <div>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="footer-logo" src="images/brand-htmlacademy.svg" width="115" height="33"
+          <img class="footer-logo" src="images/brand-HTML-Academy.png" width="115" height="33"
             alt="Логотип HTML Academy">
         </a>
       </div>

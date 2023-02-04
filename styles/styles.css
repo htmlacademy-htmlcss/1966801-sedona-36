@@ -83,6 +83,7 @@ body {
 .hero {
   background-image: url("../images/background-hero.jpg");
   background-repeat: no-repeat;
+  background-color: #333333;
 }
 
 .advantages-item {

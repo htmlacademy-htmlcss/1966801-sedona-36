@@ -62,7 +62,6 @@ body {
 
 .page-header-logo {
   width: 140px;
-  height: 70px;
   margin-left: 70px;
   margin-right: 28px;
 }
@@ -132,8 +131,7 @@ body {
 .advantages-item {
   background-color: #82B3D3;
   width: 400px;
-  height: 385px;
-  padding: 103px 85px;
+
 }
 
 .advantages-item:first-child,
@@ -184,9 +182,7 @@ body {
 }
 
 .advices-item {
-  width: 400px;
-  height: 385px;
-  padding: 103px 85px;
+  max-width: 400px;
 }
 
 .advices-item:nth-child(odd) {
@@ -210,6 +206,7 @@ body {
 .hotel-search .button {
   font-size: 20px;
   line-height: 36px;
+
 }
 
 .subscribe {
@@ -230,6 +227,20 @@ body {
   line-height: 36px;
 }
 
+.page-footer {
+  display: flex;
+}
+
+.footer-social {
+  width: 142px;
+  margin-left: 70px;
+  margin-right: 42px;
+}
+
+.footer-contacts {
+  width: 720px;
+}
+
 .footer-contacts-address {
   font-style: normal;
   font-size: 40px;
@@ -240,6 +251,11 @@ body {
 .footer-contacts-address-phone {
   text-decoration: none;
   color: inherit;
+}
+
+.page-footer-logo {
+  width: 115px;
+  margin-left: auto;
 }
 
 .decoration-container {

@@ -109,8 +109,11 @@ body {
 }
 
 .hero {
-  background-image: url("../images/arrow.svg"), url("../images/background-hero.jpg");
+  text-align: center;
+  background-image: url("../images/triangle.svg"), url("../images/background-hero.jpg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
+  background-position: bottom;
   background-color: #333333;
 }
 
@@ -118,10 +121,24 @@ body {
   flex-grow: 1;
 }
 
-
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .advantages-item {
   background-color: #82B3D3;
+  width: 400px;
+  height: 385px;
+  padding: 103px 85px;
+}
+
+.advantages-item:first-child,
+.advantages-item:last-child {
+  width: 1200px;
 }
 
 .advantages-item:nth-child(even) {
@@ -156,6 +173,20 @@ body {
 
 .advices {
   text-align: center;
+}
+
+.advices-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+}
+
+.advices-item {
+  width: 400px;
+  height: 385px;
+  padding: 103px 85px;
 }
 
 .advices-item:nth-child(odd) {

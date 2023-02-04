@@ -16,14 +16,19 @@
 
 html {
   background-color: #F2F2F2;
+  height: 100%;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
   background-color: #FFFFFF;
+  margin: 0 auto;
   width: 1200px;
 }
 
@@ -84,6 +89,10 @@ body {
   background-image: url("../images/background-hero.jpg");
   background-repeat: no-repeat;
   background-color: #333333;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .advantages-item {

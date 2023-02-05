@@ -182,7 +182,23 @@ body {
   color: #333333;
   width: 230px;
   margin: 30px auto 102px;
+}
 
+.advantages-item-img {
+  display: flex;
+}
+
+.text-column {
+  width: 400px;
+}
+
+.img-column {
+  width: 800px;
+}
+
+.advantages-img {
+  display: block;
+  margin: 0;
 }
 
 .advices {
@@ -252,16 +268,21 @@ body {
   background-size: 100% auto;
 }
 
-.subscribe .index-title {
+.subscribe .index-title,
+.inner-subscribe .index-title {
   width: 404px;
   padding-top: 96px;
   margin: 0 auto 20px;
 }
 
-.subscribe .index-description {
-  color: #FFFFFF;
+.subscribe .index-description,
+.inner-subscribe .index-description {
   width: 475px;
   margin: 0 auto 54px;
+}
+
+.subscribe .index-description {
+  color: #FFFFFF;
 }
 
 .subscribe-form {

@@ -45,7 +45,7 @@
       </nav>
     </header>
 
-    <main class="main-inner" data-test="main">
+    <main class="main-inner main-container" data-test="main">
       <div class="decoration-container">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -129,28 +129,30 @@
       <section class="catalog-hotels">
         <h2 class="visually-hidden">Список гостиниц</h2>
 
-        <div class="catalog-filter-search">Найдено гостиниц: <span class="catalog-filter-result">38</span></div>
+        <div class="sorting-container">
+          <div class="catalog-filter-search">Найдено гостиниц: <span class="catalog-filter-result">38</span></div>
 
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
-        </select>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
 
-        <ul class="visual-display-list">
-          <li><button class="button">
-              <span class="visually-hidden">Показать карточки</span>
-            </button>
-          </li>
-          <li><button class="button">
-              <span class="visually-hidden">Показать одну карточку</span>
-            </button>
-          </li>
-          <li><button class="button">
-              <span class="visually-hidden">Показать список</span>
-            </button>
-          </li>
-        </ul>
+          <ul class="visual-display-list">
+            <li><button class="button">
+                <span class="visually-hidden">Показать карточки</span>
+              </button>
+            </li>
+            <li><button class="button">
+                <span class="visually-hidden">Показать одну карточку</span>
+              </button>
+            </li>
+            <li><button class="button">
+                <span class="visually-hidden">Показать список</span>
+              </button>
+            </li>
+          </ul>
+        </div>
 
         <ul class="hotel-list">
           <li class="hotel-card">
@@ -298,7 +300,7 @@
           </a>
         </address>
       </section>
-      <div>
+      <div class="page-footer-logo">
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <img class="footer-logo" src="images/brand-HTML-Academy.png" width="115" height="33"
             alt="Логотип HTML Academy">

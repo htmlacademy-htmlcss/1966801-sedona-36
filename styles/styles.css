@@ -32,6 +32,7 @@ body {
   width: 1200px;
 }
 
+/* Button */
 .button {
   font-size: 16px;
   line-height: 20px;
@@ -56,6 +57,7 @@ body {
   background-color: #7DB54F;
 }
 
+/* Header */
 .navigation {
   display: flex;
 }
@@ -95,6 +97,11 @@ body {
   background-color: #7DB54F;
 }
 
+/* Main */
+.main-container {
+  flex-grow: 1;
+}
+
 .index-title {
   font-size: 30px;
   line-height: 36px;
@@ -108,6 +115,7 @@ body {
   color: #333333;
 }
 
+/* Hero */
 .hero {
   text-align: center;
   background-image: url("../images/triangle.svg"), url("../images/background-hero.jpg");
@@ -117,10 +125,7 @@ body {
   background-color: #333333;
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
+/* Advantages */
 .advantages .index-title {
   width: 620px;
   margin: 69px auto 25px;
@@ -201,6 +206,7 @@ body {
   margin: 0;
 }
 
+/* Advices */
 .advices {
   text-align: center;
 }
@@ -210,7 +216,6 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-
 }
 
 .advices-item {
@@ -239,6 +244,7 @@ body {
   margin: 0 auto 81px;
 }
 
+/* Hotel-search */
 .hotel-search {
   text-align: center;
 }
@@ -260,6 +266,7 @@ body {
   margin: 0 auto 96px;
 }
 
+/* Subscribe */
 .subscribe {
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -296,6 +303,7 @@ body {
   line-height: 36px;
 }
 
+/*Footer */
 .page-footer {
   display: flex;
 }
@@ -327,6 +335,7 @@ body {
   margin-left: auto;
 }
 
+/* Catalog */
 .decoration-container {
   background-image: url("../images/background-filter.png");
   background-repeat: no-repeat;
@@ -335,6 +344,7 @@ body {
   background-color: #82B3D3;
 }
 
+/*Inner-header */
 .inner-header {
   padding: 35px 70px 40px;
 }
@@ -356,6 +366,7 @@ body {
   text-decoration: none;
 }
 
+/* Filters */
 .catalog-filter {
   display: flex;
 }
@@ -376,6 +387,7 @@ body {
   line-height: 23px;
 }
 
+/* Catalog-hotels */
 .sorting-container {
   display: flex;
   width: 1060px;
@@ -446,6 +458,8 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Pagination */
+
 .pagination-item {
   font-size: 20px;
   line-height: 36px;
@@ -464,6 +478,7 @@ body {
   background-color: #F2F2F2;
 }
 
+/* Inner-subscribe */
 .inner-subscribe {
   color: #000000;
 }

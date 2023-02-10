@@ -69,10 +69,16 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 450px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.navigation-item {
+  padding: 20px 16px;
 }
 
 .navigation-user {
@@ -95,6 +101,19 @@ body {
   line-height: 10px;
   color: #FFFFFF;
   background-color: #7DB54F;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Main */
@@ -123,6 +142,13 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: #333333;
+}
+
+.hero-welcome {
+  display: block;
+  padding-top: 51px;
+  padding-bottom: 81px;
+  margin: 0 auto;
 }
 
 /* Advantages */

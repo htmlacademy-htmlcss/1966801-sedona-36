@@ -75,6 +75,9 @@ body {
 .navigation {
   display: flex;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -6px;
 }
 
 .page-header-logo {
@@ -110,16 +113,19 @@ body {
 }
 
 .navigation-user .navigation-link {
-  min-width: 20px;
-  min-height: 20px;
+  min-width: 44px;
+  min-height: 64px;
+  padding: 0;
 }
 
-.navigation-user .button {
-  padding: 8px 34px;
-  margin-left: auto;
+.navigation-user .navigation-link.button {
+  min-height: 0;
   margin-top: 14px;
+  padding: 8px 34px;
+  margin-left: 20px;
   color: #FFFFFF;
   text-transform: uppercase;
+
 }
 
 .favourites {
@@ -321,7 +327,7 @@ body {
   background-color: #82B3D3;
   background-image: url("../images/background-subscribe.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
 }
 
 .subscribe .index-title,
@@ -353,14 +359,26 @@ body {
 }
 
 /*Footer */
-.page-footer {
+.page-footer-continer {
   display: flex;
+  padding: 40px 70px 30px;
 }
 
 .footer-social {
-  width: 142px;
-  margin-left: 70px;
-  margin-right: 42px;
+  width: 144px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  width: 48px;
+  height: 40px;
 }
 
 .footer-contacts {

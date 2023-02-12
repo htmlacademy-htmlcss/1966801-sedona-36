@@ -497,8 +497,24 @@ body {
 }
 
 .visual-display-list {
+  display: flex;
+  flex-wrap: :wrap;
   width: 160px;
-  margin-left: auto;
+  list-style-type: none;
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
+}
+
+.visual-display-item {
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.visual-display-item:not(:nth-child(3n)) {
+  margin-right: 8px;
 }
 
 .hotel-list {
@@ -506,6 +522,7 @@ body {
   list-style: none;
   padding: 0;
   flex-wrap: wrap;
+  margin: 40px 0 80px
 }
 
 .hotel-card {
@@ -542,6 +559,12 @@ body {
 }
 
 /* Pagination */
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
 .pagination-item {
   font-size: 20px;
@@ -549,11 +572,28 @@ body {
   font-weight: 700;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 23px;
   color: #FFFFFF;
   text-align: center;
   text-decoration: none;
   background-color: #82B3D3;
+}
+
+.dots {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 23px;
 }
 
 .pagination-current {

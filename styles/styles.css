@@ -81,7 +81,10 @@ body {
 .navigation {
   display: flex;
   margin: 0 auto;
+}
 
+.navigation-logo {
+  line-height: 0;
 }
 
 .page-header-logo {

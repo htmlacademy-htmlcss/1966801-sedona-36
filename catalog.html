@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button" href="#">Хочу сюда!</a>
+            <a class="navigation-link button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -139,15 +139,15 @@
           </select>
 
           <ul class="visual-display-list">
-            <li><button class="button">
+            <li class="visual-display-item"><button class="visual-display-item-tile">
                 <span class="visually-hidden">Показать карточки</span>
               </button>
             </li>
-            <li><button class="button">
+            <li class="visual-display-item"><button class="visual-display-item-slideshow">
                 <span class="visually-hidden">Показать одну карточку</span>
               </button>
             </li>
-            <li><button class="button">
+            <li class="visual-display-item"><button class="visual-display-item-list">
                 <span class="visually-hidden">Показать список</span>
               </button>
             </li>
@@ -248,7 +248,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <span>..</span>
+            <span class="dots">...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -272,39 +272,41 @@
     </main>
 
     <footer class="page-footer" data-test="footer">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="social" href="https://vk.com/htmlacademy/">
-              <span class="visually-hidden">ВКонтакте</span>
+      <div class="page-footer-continer">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="social" href="https://vk.com/htmlacademy/">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="social" href="https://t.me/htmlacademy/">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="social" href="https://www.youtube.com/user/htmlacademyru/">
+                <span class="visually-hidden">Ютюб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Контаты</h2>
+          <address class="footer-contacts-address">
+            <a class="footer-contacts-address-phone" href="tel:+78128121212">
+              +7 (812) 812-12-12
             </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="social" href="https://t.me/htmlacademy/">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="social" href="https://www.youtube.com/user/htmlacademyru/">
-              <span class="visually-hidden">Ютюб</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контаты</h2>
-        <address class="footer-contacts-address">
-          <a class="footer-contacts-address-phone" href="tel:+78128121212">
-            +7 (812) 812-12-12
+          </address>
+        </section>
+        <div class="page-footer-logo">
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img class="footer-logo" src="images/brand-HTML-Academy.png" width="115" height="33"
+              alt="Логотип HTML Academy">
           </a>
-        </address>
-      </section>
-      <div class="page-footer-logo">
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="footer-logo" src="images/brand-HTML-Academy.png" width="115" height="33"
-            alt="Логотип HTML Academy">
-        </a>
+        </div>
       </div>
     </footer>
   </body>

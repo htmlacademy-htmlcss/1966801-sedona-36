@@ -368,7 +368,7 @@ body {
 }
 
 /*Footer */
-.page-footer-continer {
+.page-footer {
   display: flex;
   padding: 40px 70px 30px;
 }
@@ -500,7 +500,7 @@ body {
 
 .visual-display-list {
   display: flex;
-  flex-wrap: :wrap;
+  flex-wrap: wrap;
   width: 160px;
   list-style-type: none;
   margin: 0;

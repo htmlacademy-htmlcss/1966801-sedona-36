@@ -359,6 +359,12 @@ body {
 
 .subscribe-form {
   text-align: center;
+  display: flex;
+}
+
+.field {
+  width: 452px;
+  border: none;
 }
 
 .subscribe .button,

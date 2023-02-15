@@ -365,6 +365,13 @@ body {
 .field {
   width: 452px;
   border: none;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 14px 0 14px 20px;
+}
+
+.inner-subscribe .field {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .subscribe .button,

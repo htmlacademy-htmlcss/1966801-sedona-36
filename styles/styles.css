@@ -47,8 +47,9 @@ body {
 
 /* Button */
 .button {
-  font-size: 16px;
-  line-height: 20px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
   font-weight: 700;
   text-align: center;
   color: #FFFFFF;
@@ -56,18 +57,29 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+  border-radius: 4px;
   padding: 8px 50px;
 }
 
-.button-blue {
+.button.button-small {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button.button-fill {
+  display: block;
+  padding: 8px;
+}
+
+.button.button-secondary {
   background-color: #82B3D3;
 }
 
-.button-transparent {
+.button.button-transparent {
   background-color: transparent;
 }
 
-.button-green {
+.button.button-selected {
   background-color: #7DB54F;
 }
 
@@ -132,7 +144,7 @@ body {
   margin-left: 20px;
   color: #FFFFFF;
   text-transform: uppercase;
-
+  border-radius: 4px;
 }
 
 .favourites {
@@ -325,6 +337,8 @@ body {
 .hotel-search .button {
   font-size: 20px;
   line-height: 36px;
+  padding: 8px 50px;
+  border-radius: 4px;
 }
 
 /* Subscribe */
@@ -376,8 +390,7 @@ body {
 
 .subscribe .button,
 .inner-subscribe .button {
-  font-size: 20px;
-  line-height: 36px;
+  border-radius: 0;
 }
 
 /*Footer */
@@ -533,24 +546,34 @@ body {
 }
 
 .hotel-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   list-style: none;
   padding: 0;
-  flex-wrap: wrap;
+  gap: 20px;
   margin: 40px 0 80px
 }
 
 .hotel-card {
-  width: 300px;
-  margin-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+  border: 1px solid #E6E6E6;
+  padding: 20px;
 }
 
 .hotel-card-link {
+  grid-column: 1/-1;
   text-decoration: none;
   color: inherit;
   font-size: 24px;
   Line-height: 28px;
   font-weight: 700;
+}
+
+.hotel-card-title {
+  margin: 0;
+  margin-top: 16px;
 }
 
 .hotel-card-type,
@@ -560,15 +583,32 @@ body {
   color: #333333;
 }
 
-.hotel-card-raiting span {
+.hotel-card-price {
+  text-align: end;
+}
+
+.raiting-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-card-raiting {
   font-size: 16px;
   line-height: 20px;
   color: #333333;
   text-transform: uppercase;
   background-color: #F2F2F2;
+  padding: 9px 22px 8px 23px;
 }
 
 .raiting-star {
+  width: 18px;
+  height: 17px;
+  margin-right: 6px;
+  margin-top: 10px;
   background-image: url("../images/star.svg");
   background-repeat: no-repeat;
 }

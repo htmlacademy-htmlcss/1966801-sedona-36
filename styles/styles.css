@@ -468,7 +468,7 @@ body {
 
 .catalog-filter {
   display: flex;
-  gap: 70px
+  gap: 70px;
 }
 
 .catalog-filter-group {

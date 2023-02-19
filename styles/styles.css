@@ -440,6 +440,27 @@ body {
 .footer-social-item {
   width: 48px;
   height: 40px;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+.footer-social-item-vk {
+  background-image: url("../images/social/social-VK.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-item-tg {
+  background-image: url("../images/social/social-Telegram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-item-youtube {
+  background-image: url("../images/social/Social-Youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-contacts {

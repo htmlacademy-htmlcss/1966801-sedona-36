@@ -626,6 +626,14 @@ body {
   margin-right: 8px;
 }
 
+.visual-display-button {
+  background-color: #FFFFFF;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);

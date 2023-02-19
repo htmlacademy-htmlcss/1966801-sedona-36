@@ -504,21 +504,47 @@ body {
 
 .breadcrumbs {
   display: flex;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   margin-top: 8px;
 }
 
-.breadcrumbs-title {
-  font-size: 16px;
-}
-
 .breadcrumbs-link {
+  display: block;
+  min-width: 12px;
+  min-height: 12px;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+}
+
+.breadcrumbs-item:nth-child(1) .breadcrumbs-link {
+  background-image: url("../images/home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs-item {
+  position: relative;
   margin-right: 28px;
+}
+
+.breadcrumbs-item::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/breadcrumbs.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 7px;
+  height: 20px;
+  right: -16px;
+  top: -2px;
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
 }
 
 /* Filters */

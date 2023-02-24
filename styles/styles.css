@@ -84,6 +84,66 @@ body {
   background-color: #7DB54F;
 }
 
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.button:disabled {
+  background-color: #E5E5E5;
+}
+
+.button.button-secondary:hover {
+  background-color: #68A2CA;
+}
+
+.button.button-secondary:focus {
+  background-color: #68A2CA;
+}
+
+.button.button-secondary:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.button.button-transparent:hover {
+  background-color: transparent;
+  Opacity: 60%;
+}
+
+.button.button-transparent:focus {
+  background-color: transparent;
+  border: 3px solid #7B61FF;
+  border-radius: 5px;
+}
+
+.button.button-transparent:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  border: none;
+}
+
+.button.button-selected:hover {
+  background-color: #6C9E42;
+}
+
+.button.button-selected:focus {
+  background-color: #6C9E42;
+}
+
+.button.button-selected:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7DB54F;
+}
+
 /* Header */
 .page-header {
   position: relative;

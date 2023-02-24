@@ -116,7 +116,7 @@ body {
 
 .button.button-transparent:hover {
   background-color: transparent;
-  Opacity: 60%;
+  opacity: 60%;
 }
 
 .button.button-transparent:focus {
@@ -129,6 +129,11 @@ body {
   color: rgba(255, 255, 255, 0.3);
   background-color: transparent;
   border: none;
+}
+
+.button.button-transparent:disabled {
+  background-color: transparent;
+  opacity: 10%;
 }
 
 .button.button-selected:hover {

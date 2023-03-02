@@ -45,6 +45,12 @@ body {
   overflow: hidden;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Button */
 .button {
   font-family: inherit;
@@ -123,6 +129,7 @@ body {
   background-color: transparent;
   border: 3px solid #7B61FF;
   border-radius: 5px;
+  outline: none;
 }
 
 .button.button-transparent:active {
@@ -200,7 +207,6 @@ body {
   min-width: 44px;
   min-height: 64px;
   padding: 12px 22px;
-  box-sizing: border-box;
 }
 
 .navigation-user .navigation-item:nth-child(1) .navigation-link {
@@ -375,7 +381,6 @@ body {
 
 .advices-item {
   width: 400px;
-  box-sizing: border-box;
   padding: 81px 85px;
 }
 
@@ -487,6 +492,7 @@ body {
 /*Footer */
 .page-footer {
   display: flex;
+  justify-content: space-between;
   padding: 40px 70px 30px;
 }
 
@@ -505,7 +511,6 @@ body {
 .footer-social-item {
   width: 48px;
   height: 40px;
-  box-sizing: border-box;
   padding: 12px 14px;
   cursor: pointer;
 }
@@ -659,15 +664,24 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   width: 338px;
-  margin-right: 200px;
+  margin-right: auto;
 }
 
 .select-control {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  width: 200px;
+  width: 100%;
   margin-right: 70px;
+  appearance: none;
+  padding: 12px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  outline: none;
+  padding-right: 40px;
 }
 
 .visual-display-list {
@@ -787,7 +801,6 @@ body {
 
 .pagination-link {
   display: block;
-  box-sizing: border-box;
   width: 60px;
   height: 60px;
   padding: 12px 23px;
@@ -799,7 +812,6 @@ body {
 
 .dots {
   display: block;
-  box-sizing: border-box;
   width: 60px;
   height: 60px;
   padding: 12px 23px;

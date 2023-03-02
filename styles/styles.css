@@ -549,6 +549,18 @@ body {
   color: inherit;
 }
 
+.footer-contacts-address-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .page-footer-logo {
   width: 115px;
   margin-left: auto;

@@ -566,6 +566,18 @@ body {
   margin-left: auto;
 }
 
+.htmlacademy-link:hover svg {
+  fill: #756157;
+}
+
+.htmlacademy-link:focus svg {
+  fill: #756157;
+}
+
+.htmlacademy-link:active svg {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 /* Catalog */
 .decoration-container {
   background-image: url("../images/background-filter.png");

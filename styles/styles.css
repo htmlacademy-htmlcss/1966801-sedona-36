@@ -751,6 +751,22 @@ body {
   border-radius: 4px;
 }
 
+.visual-display-button-checked {
+  border: 2px solid #000000;
+}
+
+.visual-display-button:hover {
+  border: 2px solid #000000;
+}
+
+.visual-display-button:focus {
+  border: 2px solid #68A2CA;
+}
+
+.visual-display-button:active {
+  border: 2px solid #000000;
+}
+
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);

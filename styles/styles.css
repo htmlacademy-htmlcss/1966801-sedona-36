@@ -510,41 +510,35 @@ body {
   padding: 40px 70px 30px;
 }
 
-.footer-social {
-  width: 144px;
-}
-
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
+  width: 145px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.footer-social-item {
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
   width: 48px;
   height: 40px;
-  padding: 12px 14px;
   cursor: pointer;
+  fill: #83B3D3;
 }
 
-.footer-social-item-vk {
-  background-image: url("../images/social/social-VK.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.footer-social-link:hover svg {
+  fill: #68A2CA;
 }
 
-.footer-social-item-tg {
-  background-image: url("../images/social/social-Telegram.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.footer-social-link:focus svg {
+  fill: #68A2CA;
 }
 
-.footer-social-item-youtube {
-  background-image: url("../images/social/Social-Youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.footer-social-link:active svg {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts {

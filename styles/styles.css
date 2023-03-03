@@ -341,7 +341,16 @@ body {
   text-align: center;
   text-transform: uppercase;
   width: 175px;
-  margin: 100px auto 62px;
+  margin: 102px auto 0;
+}
+
+.advantages-item-title::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
 }
 
 .advantages-item-description {
@@ -350,7 +359,11 @@ body {
   text-align: center;
   color: #333333;
   width: 230px;
-  margin: 30px auto 102px;
+  margin: 0 auto 102px;
+}
+
+.advantages-item-img .advantages-item-title::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-item-img .advantages-item-description {

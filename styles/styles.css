@@ -174,11 +174,6 @@ body {
   width: 140px;
 }
 
-/* .page-header-logo {
-  width: 140px;
-
-} */
-
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -214,27 +209,37 @@ body {
   background-color: #756257;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
 .navigation-user {
-  max-width: 290px;
+  display: flex;
+  width: 290px;
   margin-left: auto;
+}
+
+.navigation-user svg {
+  display: block;
+}
+
+.navigation-user .navigation-link:hover svg,
+.navigation-user .navigation-link:focus svg {
+  fill: #756157;
 }
 
 .navigation-user .navigation-link {
   min-width: 44px;
   min-height: 64px;
-  padding: 12px 22px;
-}
-
-.navigation-user .navigation-item:nth-child(1) .navigation-link {
-  background-image: url("../images/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 22px 13px;
 }
 
 .navigation-user .navigation-item:nth-child(2) .navigation-link {
-  background-image: url("../images/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
 }
 
@@ -250,6 +255,8 @@ body {
 
 .favourites {
   position: absolute;
+  top: 11px;
+  right: 4px;
   font-size: 10px;
   line-height: 10px;
   color: #FFFFFF;
@@ -539,6 +546,7 @@ body {
 .footer-social-link {
   display: flex;
   justify-content: center;
+  padding: 12px;
   justify-items: center;
   width: 48px;
   height: 40px;
@@ -592,6 +600,10 @@ body {
 }
 
 .htmlacademy-link {
+  display: block;
+}
+
+.htmlacademy-link svg {
   display: block;
 }
 
@@ -735,6 +747,7 @@ body {
   background-position: right 20px center;
   outline: none;
   padding-right: 40px;
+  cursor: pointer;
 }
 
 .visual-display-list {
@@ -764,6 +777,7 @@ body {
   height: 48px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .visual-display-button-checked {
@@ -870,7 +884,7 @@ body {
 
 .pagination-link {
   display: block;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   padding: 11px 4px;
   color: #FFFFFF;

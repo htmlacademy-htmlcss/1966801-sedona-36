@@ -872,7 +872,7 @@ body {
   display: block;
   width: 60px;
   height: 60px;
-  padding: 12px 23px;
+  padding: 11px 4px;
   color: #FFFFFF;
   text-align: center;
   text-decoration: none;
@@ -880,9 +880,12 @@ body {
   border-radius: 4px;
 }
 
+.pagination-link:not(:first-child) {
+  border: 1px solid #82B3D3;
+}
+
 .pagination-link:hover:not(.pagination-current) {
   background-color: #68A2CA;
-  border: 1px solid #82B3D3;
 }
 
 .pagination-link:focus:not(.pagination-current) {

@@ -781,6 +781,10 @@ body {
   outline: none;
 }
 
+.range-input:not(:placeholder-shown):not(:focus) {
+  border: 3px solid #E6E6E6;
+}
+
 .catalog-filter-label span {
   position: absolute;
   content: "от";
@@ -1228,6 +1232,10 @@ body {
 .modal-form-input:active,
 .modal-form-input:not(:placeholder-shown) {
   outline: 3px solid #000;
+}
+
+.modal-form-input:not(:placeholder-shown):not(:focus) {
+  outline: none;
 }
 
 .modal-form-control {

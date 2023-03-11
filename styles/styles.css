@@ -30,6 +30,7 @@ body {
   background-color: #FFFFFF;
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -1120,4 +1121,252 @@ body {
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  width: 717px;
+  padding: 64px 70px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.modal-title {
+  margin: 0 0 64px 0;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.modal-close {
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-image: url("../images/cross.svg");
+  background-color: #F2F2F2;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close:focus:not(:active) {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close:active {
+  opacity: 0.3;
+}
+
+.modal-form {
+  display: grid;
+  grid-template-columns: 247px auto;
+  gap: 23px 88px;
+}
+
+.modal-form-full-width {
+  grid-column: 1/-1;
+}
+
+.modal-form-label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.modal-form-input {
+  width: 440px;
+  padding: 12px 50px 12px 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.modal-form-input[type="number"] {
+  position: relative;
+  width: 110px;
+  padding: 12px 40px;
+  text-align: center;
+}
+
+.modal-form-input:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-form-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-form-input:active,
+.modal-form-input:not(:placeholder-shown) {
+  outline: 3px solid #000;
+}
+
+.modal-form-control {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.modal-form-control.minus {
+  left: 10px;
+  background-image: url("../images/minus.svg");
+}
+
+.modal-form-control.plus {
+  right: 10px;
+  background-image: url("../images/plus.svg");
+}
+
+.modal-form-control.minus:hover,
+.modal-form-control.plus:hover {
+  opacity: 1;
+}
+
+.modal-form-control.minus:active,
+.modal-form-control.plus:active {
+  opacity: 0.3;
+}
+
+.modal-form-control.minus:focus:not(:active),
+.modal-form-control.plus:focus:not(:active) {
+  opacity: 1;
+  outline: 3px solid #82B3D3;
+}
+
+.modal-form-input[type="number"]::-webkit-outer-spin-button,
+.modal-form-input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.modal-form-input-wrap {
+  position: relative;
+}
+
+.modal-form-input-wrap.date::before {
+  position: absolute;
+  z-index: 100;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  right: 20px;
+  background-image: url("../images/date.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.modal-form-caption {
+  display: block;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-top: 4px;
+  padding-left: 20px;
+}
+
+.modal-form-caption.error {
+  color: #FF5757;
+}
+
+.modal-form-label-tooltip {
+  align-self: center;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.modal-form-submit {
+  margin-top: 25px;
+}
+
+.modal-close {
+  display: none;
+}
+
+.tooltip {
+  position: relative;
+  z-index: 10;
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-control {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #83B3D3;
+  background-image: url("../images/tooltip-info.svg");
+  background-size: 2px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: 41px;
+  left: 50%;
+  width: 256px;
+  transform: translateX(-50%);
+  padding: 15px 18px 18px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.tooltip-text::before {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 9px;
+  top: -9px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url("../images/tooltip-triangle.svg");
 }

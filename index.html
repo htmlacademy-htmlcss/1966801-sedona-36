@@ -212,6 +212,49 @@
         </a>
       </div>
     </footer>
+    <div class="modal-overlay modal-close">
+      <div class="modal">
+        <h2 class="modal-title">поиск гостиницы в седоне</h2>
+        <button class="modal-close"></button>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="modal-form">
+          <label class="modal-form-label modal-form-full-width">Дата Заезда:
+            <div class="modal-form-input-wrap date">
+              <input type="text" class="modal-form-input" placeholder="Укажите дату" value="27 апреля 2020">
+              <span class="modal-form-caption error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+          </label>
+          <label class="modal-form-label modal-form-full-width">Дата Выезда:
+            <div class="modal-form-input-wrap date">
+              <input type="text" class="modal-form-input" placeholder="Укажите дату" value="1 сентября 2023">
+              <span class="modal-form-caption">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+          </label>
+          <label class="modal-form-label">Взрослые:
+            <div class="modal-form-input-wrap">
+              <button class="modal-form-control minus"></button>
+              <input type="number" class="modal-form-input" value="2">
+              <button class="modal-form-control plus"></button>
+            </div>
+          </label>
+          <label class="modal-form-label">Дети:
+            <div class="modal-form-label-tooltip">
+              <div class="tooltip">
+                <button class="tooltip-control"></button>
+                <div class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                  лет.
+                  Дети до 6 лет размещаются бесплатно.</div>
+              </div>
+            </div>
+            <div class="modal-form-input-wrap">
+              <button class="modal-form-control minus"></button>
+              <input type="number" class="modal-form-input" value="2">
+              <button class="modal-form-control plus"></button>
+            </div>
+          </label>
+          <button class="button button-fill button-secondary modal-form-full-width modal-form-submit">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 
 </html>

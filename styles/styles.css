@@ -698,6 +698,8 @@ body {
 
 .catalog-filter-group {
   width: 150px;
+  padding: 0;
+  border: none;
 }
 
 .catalog-filter-title {
@@ -707,9 +709,19 @@ body {
   margin-bottom: 30px;
 }
 
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .catalog-filter-item {
+  position: relative;
+  display: inline-block;
   font-size: 18px;
   line-height: 23px;
+  margin-bottom: 16px;
+  cursor: pointer;
 }
 
 .range-inputs {
@@ -826,6 +838,71 @@ body {
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.control {
+  cursor: pointer;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control-input:active + .control-mark {
+  opacity: 0.3;
+  color: red;
+}
+
+.control-input:disabled + .control-mark,
+.control-input:disabled ~ .control {
+  opacity: 0.1;
+  cursor: default;
+}
+
+.control-mark:hover,
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 1px;
+  margin: auto;
+  background-image: url("../images/tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
 }
 
 .catalog-filter-group-button {

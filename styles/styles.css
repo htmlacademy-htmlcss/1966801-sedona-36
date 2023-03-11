@@ -679,7 +679,7 @@ body {
   width: 7px;
   height: 20px;
   right: -16px;
-  top: -2px;
+  top: -3px;
 }
 
 .breadcrumbs-item:last-child::after {
@@ -704,11 +704,128 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
+}
+
+.range-inputs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 2px;
+  position: relative;
+}
+
+.range-input {
+  width: 143px;
+  padding: 12px 20px;
+  appearance: textfield;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+  border: 3px solid #ffffff;
+}
+
+.range-input-from {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input-to {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.range-input:hover {
+  background-color: #E6E6E6;
+  border-color: #E6E6E6;
+}
+
+.range-input:focus {
+  background-color: #E6E6E6;
+  border-color: #83B3D3;
+  outline: none;
+}
+
+.range-input:active,
+.range-input:not(:placeholder-shown) {
+  background-color: #E6E6E6;
+  border-color: #000000;
+  outline: none;
+}
+
+.catalog-filter-label span {
+  position: absolute;
+  content: "от";
+  right: 20px;
+  top: 20%;
+  width: 17px;
+  height: 24px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 78px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  border: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .catalog-filter-group-button {

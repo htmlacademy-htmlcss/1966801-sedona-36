@@ -512,19 +512,20 @@ body {
 
 .subscribe-form {
   display: flex;
-  border-radius: 4px;
-  overflow: hidden;
   margin: 0 auto 104px;
 }
 
 .field {
   width: 452px;
   border: none;
+  border-radius: 4px 0 0 4px;
   font-size: 18px;
   line-height: 24px;
   padding: 14px 0 14px 20px;
   background-color: #F2F2F2;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
 .field:hover {
@@ -545,7 +546,7 @@ body {
 }
 
 .subscribe .button {
-  border-radius: 0;
+  border-radius: 0 4px 4px 0;
 }
 
 /*Footer */

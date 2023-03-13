@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -45,7 +47,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button button-small" href=" #">Хочу сюда!</a>
+            <a class="button button-small" href=" #">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -73,7 +75,7 @@
               </p>
             </div>
             <div class="img-column">
-              <img class="advantages-img" src="images/advantages-photo-1.jpg" width="800" height="384"
+              <img class="advantages-img" src="images/advantages-photo-1.jpg" width="800" height="385"
                 alt="Улица Седоны.">
             </div>
           </li>
@@ -84,20 +86,20 @@
             </p>
           </li>
           <li class="advantages-item advantages-item-dark">
-            <h3 class="advantages-item-title">Красивая дорога</h3>
+            <h3 class="advantages-item-title">Красивая<br> дорога</h3>
             <p class="advantages-item-description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-item-title">Мало туристов</h3>
+            <h3 class="advantages-item-title">Мало<br> туристов</h3>
             <p class="advantages-item-description">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
           <li class="advantages-item advantages-item-img advantages-item-img-reverse">
             <div class="text-column">
-              <h3 class="advantages-item-title">Там есть мост дьявола</h3>
+              <h3 class="advantages-item-title">Там есть<br> мост дьявола</h3>
               <p class="advantages-item-description">
                 Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
@@ -119,19 +121,19 @@
           <li class="advices-item advices-item-house">
             <h3 class="advices-item-title">Жильё</h3>
             <p class="advices-item-description">
-              Рекомендуем пожить в настоящем мотеле, всё как в кино!
+              Рекомендуем пожить в&nbsp;настоящем мотеле,<br> всё как в кино!
             </p>
           </li>
           <li class="advices-item advices-item-food">
             <h3 class="advices-item-title">Еда</h3>
             <p class="advices-item-description">
-              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="advices-item advices-item-gift">
             <h3 class="advices-item-title">Сувениры</h3>
             <p class="advices-item-description">
-              Не только китайского, но и настоящего местного производства!
+              Не только китайского,<br> но и настоящего местного производства!
             </p>
           </li>
         </ul>
@@ -140,7 +142,7 @@
         <h2 class="visually-hidden">Поиск отеля</h2>
         <p class="index-title">Заинтересовались?</p>
         <p class="index-description">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
         <button class="button">Поиск гостиницы в Седоне</button>
@@ -215,29 +217,35 @@
     <div class="modal-overlay modal-close">
       <div class="modal">
         <h2 class="modal-title">поиск гостиницы в седоне</h2>
-        <button class="modal-close"></button>
+        <button class="modal-close-button"></button>
         <form action="https://echo.htmlacademy.ru/" method="post" class="modal-form">
-          <label class="modal-form-label modal-form-full-width">Дата Заезда:
+          <div class="modal-form-wrap modal-form-full-width">
+            <label for="'arrival">Дата Заезда:</label>
             <div class="modal-form-input-wrap date">
-              <input type="text" class="modal-form-input" placeholder="Укажите дату" value="27 апреля 2020">
+              <input type="text" class="modal-form-input" placeholder="Укажите дату" value="27 апреля 2020"
+                id="'arrival">
               <span class="modal-form-caption error">Мы не можем отправить вас в прошлое.</span>
             </div>
-          </label>
-          <label class="modal-form-label modal-form-full-width">Дата Выезда:
+          </div>
+          <div class="modal-form-wrap modal-form-full-width">
+            <label for="departure">Дата Выезда:</label>
             <div class="modal-form-input-wrap date">
-              <input type="text" class="modal-form-input" placeholder="Укажите дату" value="1 сентября 2023">
+              <input type="text" class="modal-form-input" placeholder="Укажите дату" value="1 сентября 2023"
+                id="departure">
               <span class="modal-form-caption">На эти даты есть свободные номера. Пока есть.</span>
             </div>
-          </label>
-          <label class="modal-form-label">Взрослые:
+          </div>
+          <div class="modal-form-wrap">
+            <label for="adult">Взрослые:</label>
             <div class="modal-form-input-wrap">
               <button class="modal-form-control minus"></button>
-              <input type="number" class="modal-form-input" value="2">
+              <input type="number" class="modal-form-input" value="2" id="adult">
               <button class="modal-form-control plus"></button>
             </div>
-          </label>
-          <label class="modal-form-label">Дети:
-            <div class="modal-form-label-tooltip">
+          </div>
+          <div class="modal-form-wrap">
+            <label for="children">Дети:</label>
+            <div class="modal-form-tooltip">
               <div class="tooltip">
                 <button class="tooltip-control"></button>
                 <div class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
@@ -247,10 +255,10 @@
             </div>
             <div class="modal-form-input-wrap">
               <button class="modal-form-control minus"></button>
-              <input type="number" class="modal-form-input" value="2">
+              <input type="number" class="modal-form-input" value="2" id="children">
               <button class="modal-form-control plus"></button>
             </div>
-          </label>
+          </div>
           <button class="button button-fill button-secondary modal-form-full-width modal-form-submit">Найти</button>
         </form>
       </div>

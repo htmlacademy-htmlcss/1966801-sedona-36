@@ -1215,7 +1215,7 @@ body {
   grid-column: 1/-1;
 }
 
-.modal-form-label {
+.modal-form-wrap {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -1339,7 +1339,7 @@ body {
   color: #FF5757;
 }
 
-.modal-form-label-tooltip {
+.modal-form-tooltip {
   align-self: center;
   margin-right: auto;
   margin-left: 10px;

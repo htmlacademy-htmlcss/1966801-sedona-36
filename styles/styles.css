@@ -1337,6 +1337,10 @@ body {
   margin: 0;
 }
 
+.modal-form-input[type="number"] {
+  appearance: textfield;
+}
+
 .modal-form-input-wrap {
   position: relative;
 }

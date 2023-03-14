@@ -134,9 +134,8 @@ body {
 
 .button.button-transparent:focus {
   background-color: transparent;
-  border: 3px solid #7B61FF;
+  outline: 3px solid #7B61FF;
   border-radius: 5px;
-  outline: none;
 }
 
 .button.button-transparent:active {
@@ -184,7 +183,6 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  width: 450px;
   margin: 0;
   margin-left: 168px;
   padding: 0;
@@ -228,7 +226,6 @@ body {
 .navigation-user {
   display: flex;
   justify-content: end;
-  width: 290px;
   margin-left: auto;
 }
 
@@ -516,7 +513,8 @@ body {
 }
 
 .subscribe .index-description {
-  margin-bottom: 54px;
+  max-width: 475px;
+  margin: 0 auto 54px;
   color: inherit;
 }
 
@@ -1004,6 +1002,19 @@ body {
   outline: none;
   padding-right: 40px;
   cursor: pointer;
+}
+
+.select-control:focus,
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  opacity: 0.3;
 }
 
 .visual-display-list {

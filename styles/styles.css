@@ -33,6 +33,11 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+.img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -41,6 +46,7 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -777,6 +783,7 @@ body {
 .range-input {
   width: 143px;
   padding: 9px 20px;
+  -webkit-appearance: textfield;
   appearance: textfield;
   font-weight: 700;
   font-size: 18px;
@@ -879,6 +886,7 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -985,6 +993,7 @@ body {
   color: #333333;
   width: 100%;
   margin-right: 70px;
+  -webkit-appearance: none;
   appearance: none;
   padding: 12px 20px;
   border: 2px solid #E5E5E5;
@@ -1333,11 +1342,13 @@ body {
 
 .modal-form-input[type="number"]::-webkit-outer-spin-button,
 .modal-form-input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
 
 .modal-form-input[type="number"] {
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 

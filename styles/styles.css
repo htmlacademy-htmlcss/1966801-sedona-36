@@ -225,6 +225,8 @@ body {
 
 .navigation-user {
   display: flex;
+  flex-shrink: 0;
+  max-width: 400px;
   justify-content: end;
   margin-left: auto;
 }
@@ -398,6 +400,8 @@ body {
 .advantages-img {
   display: block;
   margin: 0;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Advices */
@@ -1072,12 +1076,14 @@ body {
 .hotel-card {
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 1fr;
   gap: 16px 20px;
   border: 1px solid #E6E6E6;
   padding: 19px 20px;
 }
 
 .hotel-card-link {
+  display: block;
   grid-column: 1/-1;
   text-decoration: none;
   color: inherit;
@@ -1135,12 +1141,23 @@ body {
 
 /* Pagination */
 .pagination {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
   list-style-type: none;
+}
+
+.pagination::before {
+  content: "";
+    height: 1px;
+    position: absolute;
+    background-color: #e6e6e6;
+    top: -45px;
+    left: 0;
+    right: 0;
 }
 
 .pagination-item {
@@ -1200,6 +1217,7 @@ body {
   position: fixed;
   z-index: 100;
   top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
